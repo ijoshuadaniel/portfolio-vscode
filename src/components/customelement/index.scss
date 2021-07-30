@@ -1,0 +1,21 @@
+@import '@stylesheet';
+
+.cusParagraph {
+  display: inline-block;
+  &_tag {
+    color: $notificationserroriconforeground;
+  }
+  &_data {
+    color: $foreground;
+  }
+}
+
+.cusDiv {
+  display: inline-block;
+  &_tag {
+    color: $focusBorder;
+  }
+  &_data {
+    color: $foreground;
+  }
+}

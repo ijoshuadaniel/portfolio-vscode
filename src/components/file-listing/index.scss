@@ -1,0 +1,15 @@
+@import '@stylesheet';
+
+.fileListing {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  span {
+    margin-left: 1rem;
+  }
+  &__border {
+    border-bottom: 1px solid $checkboxbackground;
+  }
+}

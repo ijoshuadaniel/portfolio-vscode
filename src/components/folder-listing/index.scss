@@ -1,0 +1,18 @@
+@import '@stylesheet';
+
+.folderListing {
+  border-bottom: 1px solid $checkboxbackground;
+  cursor: pointer;
+  &__head {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 1rem;
+    }
+  }
+  &__body {
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,43 @@
+@import '@stylesheet';
+
+.top-header {
+  width: 100%;
+  height: 4vh;
+  background-color: $textBlockQuoteborder;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $checkboxborder;
+  &__buttons {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    position: absolute;
+    margin-left: 0.5rem;
+    div {
+      margin: 0.2rem 0.3rem;
+      border-radius: 50%;
+    }
+    &_red {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $errorForeground;
+    }
+    &_yellow {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $gitdecorationconflictingresourceforeground;
+    }
+    &_green {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $gitdecorationaddedresourceforeground;
+    }
+  }
+  &__heading {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    color: $foreground;
+    font-size: 0.8rem;
+  }
+}
