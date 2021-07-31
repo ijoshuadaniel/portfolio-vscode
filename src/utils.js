@@ -8,4 +8,6 @@ export const sidebarFileState = {
   RESUME: 'resume.js',
   APP: 'app.js',
   INDEX: 'index.js',
+  PACKAGE: 'package.json',
+  HTML: 'index.html',
 }

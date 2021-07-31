@@ -1,17 +1,23 @@
 import React, { useState } from 'react'
 import { FaAngleDown } from 'react-icons/fa'
-import { RiFileAddLine, RiFolderAddLine } from 'react-icons/ri'
+import {
+  RiFileAddLine,
+  RiFolderAddLine,
+  RiBracesFill,
+  RiHtml5Line,
+} from 'react-icons/ri'
 import { AiOutlineMinusSquare } from 'react-icons/ai'
 import { SiJavascript } from 'react-icons/si'
 import { ImFilesEmpty } from 'react-icons/im'
 import FileListing from '../file-listing'
 import FolderListing from '../folder-listing'
-import './index.scss'
 import { sidebarFileState } from '../../utils'
+import './index.scss'
 
 const SideBar = ({ sidebarState, setSidebarState }) => {
   const [componentClick, setComponentClick] = useState(false)
   const [pageClick, setPageClick] = useState(false)
+  const [publicClick, setPublicClick] = useState(false)
 
   return (
     <div className='sidebar'>
@@ -90,6 +96,18 @@ const SideBar = ({ sidebarState, setSidebarState }) => {
               onFileClick={() => setSidebarState(sidebarFileState.RESUME)}
             />
           </FolderListing>
+          <FolderListing
+            filename='Public'
+            showChlidren={publicClick}
+            onClick={() => setPublicClick(!publicClick)}
+          >
+            <FileListing
+              filename='index.html'
+              icon={<RiHtml5Line />}
+              border
+              onFileClick={() => setSidebarState(sidebarFileState.HTML)}
+            />
+          </FolderListing>
           <FileListing
             filename='app.js'
             icon={<SiJavascript />}
@@ -99,7 +117,13 @@ const SideBar = ({ sidebarState, setSidebarState }) => {
           <FileListing
             filename='index.js'
             icon={<SiJavascript />}
+            border
             onFileClick={() => setSidebarState(sidebarFileState.INDEX)}
+          />
+          <FileListing
+            filename='package.json'
+            icon={<RiBracesFill />}
+            onFileClick={() => setSidebarState(sidebarFileState.PACKAGE)}
           />
         </div>
       </div>

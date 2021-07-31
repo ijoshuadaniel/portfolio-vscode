@@ -19,3 +19,30 @@
     color: $foreground;
   }
 }
+
+.cusImport {
+  display: inline-block;
+  &_tag {
+    color: $notificationswarningiconforeground;
+  }
+  &_data {
+    color: $foreground;
+  }
+}
+
+.CusCommon {
+  display: inline-block;
+  &_data {
+    color: $foreground;
+  }
+}
+
+.CusFunctionStart {
+  display: inline-block;
+  &_tag {
+    color: $focusBorder;
+  }
+  &_data {
+    color: $foreground;
+  }
+}

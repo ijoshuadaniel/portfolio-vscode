@@ -1,22 +1,57 @@
 import React, { useState } from 'react'
 import SideBar from '@components/sidebar'
 import { sidebarFileState } from '@src/utils'
-import EditorLine from '../editorline'
-import { CusDiv, CusParagraph } from '../customelement'
-import './index.scss'
 
-const Body = () => {
-  const [sidebarState, setSidebarState] = useState(sidebarFileState.INDEX)
-  console.log(sidebarState)
+import './index.scss'
+import {
+  IndexJs,
+  AppJs,
+  ContactJs,
+  HomeJs,
+  ResumeJS,
+  HeaderJs,
+  FooterJs,
+  ProjectJs,
+  SkillsJs,
+  PackagesJson,
+  IndexHtml,
+} from '../bodyData'
+
+const Body = ({ sidebarState, setSidebarState }) => {
+  const renderDom = (param) => {
+    switch (param) {
+      case sidebarFileState.INDEX:
+        return <IndexJs />
+      case sidebarFileState.APP:
+        return <AppJs />
+      case sidebarFileState.CONTACT:
+        return <ContactJs />
+      case sidebarFileState.HOME:
+        return <HomeJs />
+      case sidebarFileState.RESUME:
+        return <ResumeJS />
+      case sidebarFileState.HEADER:
+        return <HeaderJs />
+      case sidebarFileState.FOOTER:
+        return <FooterJs />
+      case sidebarFileState.SKILLS:
+        return <SkillsJs />
+      case sidebarFileState.PROJECT:
+        return <ProjectJs />
+      case sidebarFileState.PACKAGE:
+        return <PackagesJson />
+      case sidebarFileState.HTML:
+        return <IndexHtml />
+      default:
+        return <IndexJs />
+    }
+  }
   return (
     <div className='content-body'>
       <div className='content-body__sidebar'>
         <SideBar setSidebarState={setSidebarState} />
       </div>
-      <div className='content-body__wrapper'>
-        <EditorLine ln='1' data={<CusDiv data={'Hello'} />} />
-        <EditorLine ln='2' data={<CusParagraph data='what are you doing' />} />
-      </div>
+      <div className='content-body__wrapper'>{renderDom(sidebarState)}</div>
     </div>
   )
 }
