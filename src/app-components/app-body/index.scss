@@ -1,0 +1,50 @@
+@import '@stylesheet';
+.app-body {
+  p {
+    line-height: 1.6rem;
+  }
+  &__about {
+    margin: 3rem 2rem 5rem;
+    img {
+      width: 40%;
+      margin: 3rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      justify-content: justify;
+    }
+    &-list {
+      margin: 0.5rem 0;
+      a {
+        color: $buttonbackground;
+      }
+    }
+  }
+  &__skills {
+    margin: 3rem 2rem 5rem;
+    &-flex {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__buttonFlex {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    margin: 6rem;
+  }
+
+  &__buttons {
+    margin: 1rem;
+    a {
+      border: 1px solid $buttonbackground;
+      padding: 0.5rem 2rem;
+      border-radius: 0.4rem;
+      color: $buttonbackground;
+      text-decoration: none;
+    }
+  }
+}

@@ -17,7 +17,8 @@ import {
   IndexHtml,
 } from '../bodyData'
 
-const Body = ({ sidebarState, setSidebarState }) => {
+const Body = ({ sidebarState, setSidebarState, setRunApp }) => {
+  const [progress, setProgress] = useState(false)
   const renderDom = (param) => {
     switch (param) {
       case sidebarFileState.INDEX:
@@ -46,12 +47,28 @@ const Body = ({ sidebarState, setSidebarState }) => {
         return <IndexJs />
     }
   }
+
+  const runApp = () => {
+    setProgress(true)
+    setTimeout(() => {
+      setRunApp(true)
+      setProgress(false)
+    }, 3000)
+  }
+
   return (
     <div className='content-body'>
       <div className='content-body__sidebar'>
         <SideBar setSidebarState={setSidebarState} />
       </div>
       <div className='content-body__wrapper'>{renderDom(sidebarState)}</div>
+      <div className='content-body__runapp'>
+        {progress ? (
+          <progress />
+        ) : (
+          <button onClick={() => runApp()}>Run App</button>
+        )}
+      </div>
     </div>
   )
 }

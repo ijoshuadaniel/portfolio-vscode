@@ -12,4 +12,25 @@
     height: 92vh;
     padding: 1rem;
   }
+  &__runapp {
+    display: block;
+    position: absolute;
+    background-color: $textBlockQuoteborder;
+    width: 20%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 4vh;
+    right: 0;
+    border-top-left-radius: 0.6rem;
+    button {
+      width: 80%;
+      height: 60%;
+      border-radius: 0.4rem;
+      background-color: $buttonbackground;
+      border: 1px solid $buttonbackground;
+      color: $foreground;
+    }
+  }
 }

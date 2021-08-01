@@ -13,7 +13,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'build.bundle.js',
+    chunkFilename: '[name].js',
   },
   module: {
     rules: [
@@ -27,6 +27,17 @@ module.exports = {
         use: ['babel-loader'],
       },
     ],
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),

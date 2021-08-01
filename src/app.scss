@@ -1,0 +1,40 @@
+@import '@stylesheet';
+.app-run {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border-radius: 0.4rem;
+  display: flex;
+  &__closeIcon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 1.3rem;
+  }
+  .app-sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: $textCodeBlockbackground;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    padding: 1rem;
+    color: $foreground;
+  }
+  .app-body {
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+  }
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

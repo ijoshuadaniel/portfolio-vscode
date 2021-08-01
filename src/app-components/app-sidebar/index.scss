@@ -1,0 +1,19 @@
+@import '@stylesheet';
+
+.app-sidebar {
+  &__heading {
+    margin-bottom: 4rem;
+    font-weight: bold;
+  }
+  &__menu {
+    li {
+      list-style: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid $checkboxbackground;
+      cursor: pointer;
+    }
+  }
+  &__selected {
+    color: $progressbarbackground;
+  }
+}
