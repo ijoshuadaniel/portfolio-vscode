@@ -1,5 +1,5 @@
-import React from 'react'
-import EditorLine from '../editorline'
+import React from 'react';
+import EditorLine from '../editorline';
 import {
   CusDiv,
   CusExport,
@@ -9,7 +9,7 @@ import {
   CusCommomTag,
   CusFunctionStart,
   CusFunctionEnd,
-} from '../customelement'
+} from '../customelement';
 
 export const IndexJs = () => {
   return (
@@ -27,23 +27,23 @@ export const IndexJs = () => {
         data={'ReactDOM.render(<App/>,document.getElementById("root"))'}
       />
     </>
-  )
-}
+  );
+};
 
 export const AppJs = () => {
   const CustomRoute = () => {
     return (
       <>
         <EditorLine
-          ln='6'
+          ln='7'
           data={<CusCommomTag tag='<BrowserRouter>' color='#931c06' />}
         />
         <EditorLine
-          ln='7'
+          ln='8'
           data={<CusCommomTag tag='<Switch>' color='#28a745' />}
         />
         <EditorLine
-          ln='7'
+          ln='9'
           data={
             <CusCommon
               tag={'Route'}
@@ -55,7 +55,7 @@ export const AppJs = () => {
         />
 
         <EditorLine
-          ln='7'
+          ln='10'
           data={
             <CusCommon
               tag={'Route'}
@@ -67,7 +67,7 @@ export const AppJs = () => {
         />
 
         <EditorLine
-          ln='7'
+          ln='11'
           data={
             <CusCommon
               tag={'Route'}
@@ -79,21 +79,21 @@ export const AppJs = () => {
         />
 
         <EditorLine
-          ln='8'
+          ln='12'
           data={<CusCommomTag tag='</Switch>' color='#28a745' />}
         />
         <EditorLine
-          ln='9'
+          ln='13'
           data={<CusCommomTag tag='</BrowserRouter>' color='#931c06' />}
         />
       </>
-    )
-  }
+    );
+  };
   return (
     <>
       <EditorLine ln='1' data={<CusImport name='React' from='react' />} />
       <EditorLine
-        ln='1'
+        ln='2'
         data={
           <CusImport
             name='{ BrowserRouter, Switch , Route }'
@@ -102,21 +102,21 @@ export const AppJs = () => {
         }
       />
       <EditorLine
-        ln='2'
+        ln='3'
         data={<CusImport name='Contact' from='./pages/contact' />}
       />
-      <EditorLine ln='3' data={<CusImport name='Home' from='./pages/home' />} />
+      <EditorLine ln='4' data={<CusImport name='Home' from='./pages/home' />} />
       <EditorLine
-        ln='4'
+        ln='5'
         data={<CusImport name='Resume' from='./pages/resume' />}
       />
-      <EditorLine ln='5' data={CustomRoute()} />
+      <EditorLine ln='6' data={CustomRoute()} />
 
-      <EditorLine ln='10' data={''} />
-      <EditorLine ln='11' data={<CusExport name='app' />} />
+      <EditorLine ln='14' data={''} />
+      <EditorLine ln='15' data={<CusExport name='app' />} />
     </>
-  )
-}
+  );
+};
 
 export const ContactJs = () => {
   return (
@@ -168,8 +168,8 @@ export const ContactJs = () => {
       <EditorLine ln='15' data={''} />
       <EditorLine ln='16' data={<CusExport name='Contact' />} />
     </>
-  )
-}
+  );
+};
 
 export const HomeJs = () => {
   return (
@@ -229,8 +229,8 @@ export const HomeJs = () => {
       <EditorLine ln='16' data={''} />
       <EditorLine ln='17' data={<CusExport name='Home' />} />
     </>
-  )
-}
+  );
+};
 
 export const ResumeJS = () => {
   return (
@@ -267,8 +267,8 @@ export const ResumeJS = () => {
       <EditorLine ln='13' data={''} />
       <EditorLine ln='14' data={<CusExport name='Home' />} />
     </>
-  )
-}
+  );
+};
 
 export const HeaderJs = () => {
   return (
@@ -292,8 +292,8 @@ export const HeaderJs = () => {
       <EditorLine ln='9' data={''} />
       <EditorLine ln='10' data={<CusExport name='Header' />} />
     </>
-  )
-}
+  );
+};
 
 export const FooterJs = () => {
   return (
@@ -320,8 +320,8 @@ export const FooterJs = () => {
       <EditorLine ln='9' data={''} />
       <EditorLine ln='10' data={<CusExport name='Footer' />} />
     </>
-  )
-}
+  );
+};
 
 export const SkillsJs = () => {
   return (
@@ -352,8 +352,8 @@ export const SkillsJs = () => {
       <EditorLine ln='13' data={''} />
       <EditorLine ln='14' data={<CusExport name='skills' />} />
     </>
-  )
-}
+  );
+};
 
 export const ProjectJs = () => {
   return (
@@ -389,8 +389,8 @@ export const ProjectJs = () => {
       <EditorLine ln='15' data={''} />
       <EditorLine ln='16' data={<CusExport name='Project' />} />
     </>
-  )
-}
+  );
+};
 
 export const PackagesJson = () => {
   return (
@@ -410,8 +410,8 @@ export const PackagesJson = () => {
       <EditorLine ln='13' data='"react-icons": "^4.2.0"' />
       <EditorLine ln='14' data='},' />
     </>
-  )
-}
+  );
+};
 
 export const IndexHtml = () => {
   return (
@@ -435,5 +435,5 @@ export const IndexHtml = () => {
       <EditorLine ln='11' data='</body>' />
       <EditorLine ln='12' data='</html>' />
     </>
-  )
-}
+  );
+};

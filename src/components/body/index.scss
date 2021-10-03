@@ -1,11 +1,11 @@
 @import '@stylesheet';
 
 .content-body {
-  width: 100%;
+  width: 100vw;
   height: 92vh;
   display: flex;
   &__sidebar {
-    width: 20%;
+    width: 20vw;
   }
   &__wrapper {
     width: 80%;
