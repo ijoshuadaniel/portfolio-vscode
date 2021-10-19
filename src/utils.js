@@ -46,6 +46,7 @@ export const projectsUrl = [
   { project: 'Simple API', url: 'https://api.joshuadaniel.me/' },
   { project: 'IP Finder', url: 'https://ip.joshuadaniel.me/' },
   { project: 'Music | World of music', url: 'https://music.joshuadaniel.me/' },
+  { project: 'Json Formatter Online', url: 'https://json.joshuadaniel.me/' },
 ];
 
 export const skillsData = [
