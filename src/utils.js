@@ -47,6 +47,7 @@ export const projectsUrl = [
   { project: 'IP Finder', url: 'https://ip.joshuadaniel.me/' },
   { project: 'Music | World of music', url: 'https://music.joshuadaniel.me/' },
   { project: 'Json Formatter Online', url: 'https://json.joshuadaniel.me/' },
+  { project: 'IMeet - Video Chat', url: 'https://imeet.joshuadaniel.me/' },
 ];
 
 export const skillsData = [
