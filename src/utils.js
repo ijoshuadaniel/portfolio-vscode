@@ -48,6 +48,10 @@ export const projectsUrl = [
   { project: 'Music | World of music', url: 'https://music.joshuadaniel.me/' },
   { project: 'Json Formatter Online', url: 'https://json.joshuadaniel.me/' },
   { project: 'IMeet - Video Chat', url: 'https://imeet.joshuadaniel.me/' },
+  {
+    project: 'INews - a quick news search',
+    url: 'https://short.joshuadaniel.me/url/glvhz',
+  },
 ];
 
 export const skillsData = [
