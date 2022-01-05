@@ -50,7 +50,11 @@ export const projectsUrl = [
   { project: 'IMeet - Video Chat', url: 'https://imeet.joshuadaniel.me/' },
   {
     project: 'INews - a quick news search',
-    url: 'https://short.joshuadaniel.me/url/glvhz',
+    url: 'shorturl.at/dsO37',
+  },
+  {
+    project: 'Zomato Clone',
+    url: 'https://zomato.joshuadaniel.me/',
   },
 ];
 
