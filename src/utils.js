@@ -38,7 +38,6 @@ export const projectsUrl = [
   { project: 'Only Nattu Kozhi', url: 'https://onlynattukozhi.in' },
   { project: 'My Energy', url: 'https://myenergyco.com.au' },
   { project: 'Tyho', url: 'https://tyho.co' },
-  { project: 'Url Shortener', url: 'https://short.joshuadaniel.me/' },
   {
     project: 'Whatsapp Quick Message',
     url: 'https://whatsapp.joshuadaniel.me/',
@@ -55,6 +54,14 @@ export const projectsUrl = [
   {
     project: 'Zomato Clone',
     url: 'https://zomato.joshuadaniel.me/',
+  },
+  {
+    project: 'Request API - A client for fetching api',
+    url: 'https://req.joshuadaniel.me/',
+  },
+  {
+    project: 'Code - Simple Online Code Editor ',
+    url: 'https://code.joshuadaniel.me/',
   },
 ];
 

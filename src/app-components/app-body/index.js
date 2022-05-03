@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import {
   appSidebarFileState,
   projectsUrl,
   skillsData,
   skillsDataTwo,
   ResumeSection,
-} from '@src/utils'
-import './index.scss'
+} from '@src/utils';
+import './index.scss';
 
 const AppBody = ({ selected }) => {
   const renderDOM = (selected) => {
@@ -22,15 +22,15 @@ const AppBody = ({ selected }) => {
               projects worked.
             </p>
             <p>
-              4+ years of experience, Practise makes man perfect, and experience
-              has got me beyond perfection. With 4+ years of experience and 50+
+              5+ years of experience, Practise makes man perfect, and experience
+              has got me beyond perfection. With 5+ years of experience and 50+
               commercial projects' accomplishment and high level of cognition in
               the projects I work, I have excelled in my passion. My knowledge
               on latest web technologies and advanced techniques and methods
               adds benefit to my experience in my profession.
             </p>
           </div>
-        )
+        );
       case appSidebarFileState.CONTACT:
         return (
           <div className='app-body__about'>
@@ -39,9 +39,29 @@ const AppBody = ({ selected }) => {
               company or need to work on projects?
             </p>
             <p>Kindly contact me</p>
-            <p>danielpauljoshuas@gmail.com</p>
+            <p>
+              Email:
+              <a href='mailto:danielpauljoshuas@gmail.com'>
+                danielpauljoshuas@gmail.com
+              </a>
+            </p>
+            <p>
+              Github:
+              <a target='_blank' href='https://github.com/ijoshuadaniel'>
+                https://github.com/ijoshuadaniel
+              </a>
+            </p>
+            <p>
+              LinkedIn :
+              <a
+                target='_blank'
+                href='https://www.linkedin.com/in/danielpauljoshuas/'
+              >
+                https://www.linkedin.com/in/danielpauljoshuas/
+              </a>
+            </p>
           </div>
-        )
+        );
       case appSidebarFileState.PROJECT:
         return (
           <div className='app-body__about'>
@@ -58,7 +78,7 @@ const AppBody = ({ selected }) => {
               </ul>
             </p>
           </div>
-        )
+        );
       case appSidebarFileState.SKILLS:
         return (
           <div className='app-body__skills'>
@@ -87,7 +107,7 @@ const AppBody = ({ selected }) => {
               </ul>
             </div>
           </div>
-        )
+        );
       case appSidebarFileState.RESUME:
         return (
           <div className='app-body__about'>
@@ -99,14 +119,14 @@ const AppBody = ({ selected }) => {
                       {item.name}
                     </a>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
-        )
+        );
     }
-  }
-  return <div className='app-body'>{renderDOM(selected)}</div>
-}
+  };
+  return <div className='app-body'>{renderDOM(selected)}</div>;
+};
 
-export default AppBody
+export default AppBody;
